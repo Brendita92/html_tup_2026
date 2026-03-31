@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+    .contenedor {
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start; /* alineados a la izquierda */
+      margin-left: 100px; /* los corre un poco hacia el centro */
+    }
+
+    .foto {
+      width: 300px;
+      margin-bottom: 20px; /* espacio entre imagen y video */
+    }
+
+    .video {
+      width: 300px;
+    }
+  </style>
+
 </head>
-<link rel="stylesheet" href="css/style.css">
 
 <body>
     <h1>Hola, soy Brenda</h1>
   <p>Esta es mi primera página publicada con GitHub</p>
 
-<img src="imagen.png/20221119_171720.jpg" alt="foto" width = "300px">
+<div class="contenedor">
+        <img src="imagen.png/20221119_171720.jpg" alt="foto" width = "300px">
 
-<video width="640" height="360" controls>
-  <source src="video/sample-mp4-files-sample_640x360.mp4" type="video/mp4">  
-</video>
-
+        <video width="640" height="360" controls>
+              <source src="video/sample-mp4-files-sample_640x360.mp4" type="video/mp4">  
+        </video>
+</div>
 
 </body>
 </html>
